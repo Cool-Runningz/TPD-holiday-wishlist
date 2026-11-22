@@ -31,7 +31,6 @@ export function TopBar({ view, count, onNavigate }: TopBarProps) {
             <span className="block truncate font-display text-[15px] font-semibold tracking-[-0.01em] text-ink">
               The Productive Dev
             </span>
-            <span className="block truncate font-mono text-[11px] text-ink-muted">gift-wish-list/2026</span>
           </span>
           <span className="sr-only sm:hidden">The Productive Dev Wish List</span>
         </button>

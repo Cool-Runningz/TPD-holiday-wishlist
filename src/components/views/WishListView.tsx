@@ -25,7 +25,7 @@ export function WishListView({ items, onToggle, onBrowse, onOpenInGuide }: WishL
         <div className="lg:col-span-7">
           <p className="flex items-center gap-2 font-mono text-xs text-ink-soft">
             <span aria-hidden="true" className="h-2 w-2 bg-sky-deep" />
-            Saved from The Productive Dev Christmas Wish List 2026
+            Saved from The Productive Dev Holiday Wish List 2026
           </p>
           <h1 className="mt-5 font-display text-[clamp(52px,7.5vw,104px)] font-semibold leading-[0.92] tracking-[-0.045em] text-ink">
             My Wish List

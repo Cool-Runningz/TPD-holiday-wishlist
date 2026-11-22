@@ -44,7 +44,7 @@ export function useShareWishList(ids: string[]) {
     }
     const data: ShareData = {
       title: 'My Wish List · The Productive Dev',
-      text: 'Here’s my Christmas wish list from The Productive Dev.',
+      text: 'Here’s my holiday wish list from The Productive Dev.',
       url: shareUrl
     };
     if (typeof navigator.share === 'function' && (!navigator.canShare || navigator.canShare(data))) {

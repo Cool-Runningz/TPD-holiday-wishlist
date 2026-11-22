@@ -45,22 +45,14 @@ export function GuideHero({
           <h1 id="guide-title" className="mt-6 font-display font-semibold text-ink">
             <span className="block text-xl tracking-[-0.01em] sm:text-2xl">The Productive Dev</span>
             <span className="mt-3 block text-[clamp(52px,7.2vw,104px)] leading-[0.92] tracking-[-0.045em]">
-              Christmas
+              Holiday
               <br />
               Wish List{' '}
               <span className="inline-block rounded-2xl bg-sky px-3 pb-1 leading-[1.02]">2026</span>
             </span>
           </h1>
-          <p className="mt-7 max-w-[520px] text-lg leading-relaxed text-ink-soft">
-            Every December someone asks what I’d actually recommend. So here it is: thirteen things I use, love, or
-            keep telling people about — from the desk to the trail. Star the ones you’d like to unwrap, then share your
-            list.
-          </p>
           <div className="mt-8 flex flex-wrap items-center gap-3">
-            <button type="button" onClick={onBrowse} className="inline-flex h-12 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-semibold text-cream transition-[background-color,transform] duration-150 ease-out hover:bg-ink/90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
-              Browse the picks
-              <ArrowDownIcon className="h-4 w-4" aria-hidden="true" />
-            </button>
+            
             <button type="button" onClick={onOpenWishList} className="inline-flex h-12 items-center gap-2 rounded-full border border-ink/25 px-6 text-[15px] font-semibold text-ink transition-[border-color,background-color] duration-150 ease-out hover:border-ink hover:bg-paper focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
               <StarIcon className="h-4 w-4" aria-hidden="true" fill={savedCount > 0 ? 'currentColor' : 'none'} />
               My Wish List
