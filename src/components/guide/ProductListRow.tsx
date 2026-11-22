@@ -23,7 +23,7 @@ export function ProductListRow({ product, selected, onToggle }: ProductListRowPr
       </div>
       <div className="min-w-0">
         <p className="font-mono text-[11px] text-ink-muted">
-          {product.maker} <span aria-hidden="true">/</span> #{product.sku.replace('TPD-', '')}
+          {product.maker} 
         </p>
         <h3 id={titleId} className="mt-0.5 font-display text-lg font-semibold tracking-[-0.01em] text-ink">
           {product.name}

@@ -3,7 +3,6 @@ import type { Product } from '../types/catalog';
 export const products: Product[] = [
 {
   id: 'keyboard',
-  sku: 'TPD-0401',
   name: 'Keychron Q1 Max',
   maker: 'Keychron',
   category: 'home-office',
@@ -15,7 +14,6 @@ export const products: Product[] = [
 },
 {
   id: 'keypad',
-  sku: 'TPD-0501',
   name: 'Stream Deck +',
   maker: 'Elgato',
   category: 'home-office',
@@ -27,7 +25,6 @@ export const products: Product[] = [
 },
 {
   id: 'dock',
-  sku: 'TPD-0502',
   name: 'CalDigit TS4 Dock',
   maker: 'CalDigit',
   category: 'home-office',
@@ -39,7 +36,6 @@ export const products: Product[] = [
 },
 {
   id: 'lightbar',
-  sku: 'TPD-0503',
   name: 'ScreenBar Halo',
   maker: 'BenQ',
   category: 'home-office',
@@ -51,7 +47,6 @@ export const products: Product[] = [
 },
 {
   id: 'remarkable',
-  sku: 'TPD-0601',
   name: 'reMarkable Paper Pro',
   maker: 'reMarkable',
   category: 'e-ink',
@@ -63,7 +58,6 @@ export const products: Product[] = [
 },
 {
   id: 'boox',
-  sku: 'TPD-0701',
   name: 'BOOX Palma 2',
   maker: 'Onyx BOOX',
   category: 'e-ink',
@@ -75,7 +69,6 @@ export const products: Product[] = [
 },
 {
   id: 'trmnl',
-  sku: 'TPD-0702',
   name: 'TRMNL',
   maker: 'TRMNL',
   category: 'e-ink',
@@ -87,7 +80,6 @@ export const products: Product[] = [
 },
 {
   id: 'headphones',
-  sku: 'TPD-0801',
   name: 'Sony WH-1000XM6',
   maker: 'Sony',
   category: 'tech',
@@ -99,7 +91,6 @@ export const products: Product[] = [
 },
 {
   id: 'hub',
-  sku: 'TPD-0901',
   name: 'Home Assistant Green',
   maker: 'Nabu Casa',
   category: 'tech',
@@ -111,7 +102,6 @@ export const products: Product[] = [
 },
 {
   id: 'pixelclock',
-  sku: 'TPD-0902',
   name: 'Ulanzi TC001 Pixel Clock',
   maker: 'Ulanzi',
   category: 'tech',
@@ -123,7 +113,6 @@ export const products: Product[] = [
 },
 {
   id: 'watch',
-  sku: 'TPD-1001',
   name: 'Garmin Forerunner 970',
   maker: 'Garmin',
   category: 'fitness',
@@ -135,7 +124,6 @@ export const products: Product[] = [
 },
 {
   id: 'massager',
-  sku: 'TPD-1101',
   name: 'Theragun Mini',
   maker: 'Therabody',
   category: 'wellness',
@@ -147,7 +135,6 @@ export const products: Product[] = [
 },
 {
   id: 'bonsai',
-  sku: 'TPD-1102',
   name: 'LEGO Bonsai Tree',
   maker: 'LEGO',
   category: 'wellness',

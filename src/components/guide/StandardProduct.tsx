@@ -30,7 +30,7 @@ export function StandardProduct({ product, selected, onToggle, wide = false }: S
 
       <div className={`mt-5 flex flex-1 flex-col ${wide ? 'sm:mt-0' : ''}`}>
         <p className="font-mono text-xs text-ink-muted">
-          {product.maker} <span aria-hidden="true">/</span> #{product.sku.replace('TPD-', '')}
+          {product.maker} 
         </p>
         <h3 id={titleId} className="mt-1.5 font-display text-xl font-semibold leading-tight tracking-[-0.02em] text-ink sm:text-2xl">
           {product.name}

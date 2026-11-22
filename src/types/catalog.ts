@@ -13,7 +13,6 @@ export interface Category {
 
 export interface Product {
   id: string;
-  sku: string;
   name: string;
   maker: string;
   category: CategoryId;
