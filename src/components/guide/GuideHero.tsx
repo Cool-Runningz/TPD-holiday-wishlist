@@ -24,19 +24,17 @@ export function GuideHero({
 }: GuideHeroProps) {
   const reduce = useReducedMotion();
   return <section aria-labelledby="guide-title" className="mx-auto w-full max-w-[1320px] px-4 sm:px-6 lg:px-8">
-      <div className="grid items-center gap-10 py-10 lg:grid-cols-12 lg:gap-12 lg:py-16">
+      <div className="grid items-center gap-10 py-6 lg:grid-cols-12 lg:gap-12 lg:py-10">
         <div className="lg:col-span-6">
-          <p className="flex items-center gap-2 font-mono text-xs text-ink-soft">
-            <span aria-hidden="true" className="h-2 w-2 bg-sky-deep" />
-            Holiday gift guide · Edition 2026
+          <p className="inline-flex items-center rounded-xl bg-sky px-3 py-1.5 font-mono text-xs text-ink font-semibold">
+            2026 Edition
           </p>
           <h1 id="guide-title" className="mt-6 font-display font-semibold text-ink">
             <span className="block text-xl tracking-[-0.01em] sm:text-2xl">The Productive Dev</span>
             <span className="mt-3 block text-[clamp(52px,7.2vw,104px)] leading-[0.92] tracking-[-0.045em]">
               Holiday
               <br />
-              Wish List{' '}
-              <span className="inline-block rounded-2xl bg-sky px-3 pb-1 leading-[1.02]">2026</span>
+              Gift Guide
             </span>
           </h1>
           <div className="mt-8 flex flex-wrap items-center gap-3">

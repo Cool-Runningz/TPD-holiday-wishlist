@@ -1,7 +1,5 @@
-import React from 'react';
 import { StarIcon } from 'lucide-react';
 import type { View } from '../types/catalog';
-import { PixelFlake } from './shared/PixelFlake';
 
 interface TopBarProps {
   view: View;
@@ -23,10 +21,7 @@ export function TopBar({ view, count, onNavigate }: TopBarProps) {
           type="button"
           onClick={() => onNavigate('guide')}
           className={`flex min-w-0 items-center gap-3 rounded-lg text-left ${FOCUS}`}>
-          
-          <span className="grid h-9 w-9 shrink-0 place-items-center rounded-lg bg-ink">
-            <PixelFlake className="h-5 w-5 text-sky" />
-          </span>
+           
           <span className="hidden min-w-0 leading-tight sm:block">
             <span className="block truncate font-display text-[15px] font-semibold tracking-[-0.01em] text-ink">
               The Productive Dev

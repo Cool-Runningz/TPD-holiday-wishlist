@@ -63,7 +63,7 @@ export function GuideView({ selectedIds, onToggle, onOpenWishList, layout, onLay
           <div className="flex items-center gap-4">
             <PixelFlake className="h-8 w-8 shrink-0 text-sky-deep" />
             <p className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink sm:text-3xl">
-              That’s the list. Happy holidays, and happy shipping.
+              Happy holidays!
             </p>
           </div>
           <button
