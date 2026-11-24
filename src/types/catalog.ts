@@ -15,8 +15,8 @@ export interface Product {
   name: string;
   maker: string;
   category: CategoryId;
-  price: number;
+  price?: number;
   description: string;
   image: string;
-  buyUrl: string;
+  url: string;
 }

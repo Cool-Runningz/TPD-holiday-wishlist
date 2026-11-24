@@ -12,10 +12,10 @@ const COLLAGE = [{
   id: 'headphones',
   box: 'right-[3%] top-[1%] w-[41%]',
 }, {
-  id: 'keyboard',
-  box: 'bottom-[-4%] left-[-3%] w-[68%]',
+  id: 'home-assistant-green',
+  box: 'bottom-[-10%] left-[5%] w-[50%]',
 }, {
-  id: 'bonsai',
+  id: 'watch',
   box: 'bottom-[1%] right-[1%] w-[35%]',
 }];
 export function GuideHero({

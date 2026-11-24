@@ -2,7 +2,7 @@ import React from 'react';
 import { formatPrice } from '../../utils/catalog';
 
 interface PriceProps {
-  amount: number;
+  amount?: number;
   size?: 'sm' | 'md' | 'lg';
 }
 
@@ -13,6 +13,8 @@ const SIZES = {
 };
 
 export function Price({ amount, size = 'md' }: PriceProps) {
+  if (amount === undefined) return null;
+
   return (
     <p className={`whitespace-nowrap font-display font-semibold leading-none text-ink tabular-nums ${SIZES[size]}`}>
       {formatPrice(amount)}

@@ -3,144 +3,131 @@ import type { Product } from '../types/catalog';
 export const products: Product[] = [
 {
   id: 'keyboard',
-  name: 'Keychron Q1 Max',
-  maker: 'Keychron',
+  name: 'Das Keyboard Model S Professional',
+  maker: 'Das Keyboard',
   category: 'home-office',
-  price: 219,
+  price: 119,
   description:
-  'Gasket-mounted aluminum 75% board with hot-swap switches, a volume knob, and wireless that hops between three machines.',
-  image: "/a375ef20-faef-442d-b8b5-0e97bc3cc13d.jpg",
-  buyUrl: 'https://www.keychron.com'
+  'The Das Keyboard Model S Professional is the keyboard that put mechanical keyboards on the map. With Cherry MX2A mechanical switches and a no-nonsense design, it delivers a premium typing experience that has set the standard for over a decade.',
+  image: "/mechanical-keyboard.png",
+  url: 'https://link.amazon/B0hFDQyK1'
 },
 {
   id: 'keypad',
-  name: 'Stream Deck +',
-  maker: 'Elgato',
-  category: 'home-office',
-  price: 199.99,
+  name: 'Logitech MX Keypad',
+  maker: 'Logitech',
+  category: 'gadgets-tech',
+  price: 99.99,
   description:
-  'Eight LCD keys, four dials, and a touch strip. Map builds, deploys, and your focus playlist to physical controls.',
-  image: "/3d1980e8-f1ca-4a54-aed6-055a92d4600a.jpg",
-  buyUrl: 'https://www.elgato.com'
+  'AI control at your fingertips. Use MX Keypad to trigger AI agents, automate tasks, and control your favorite tools with a single tap. Works with VS Code, GitHub Copilot, Claude Code, IntelliJ, Zoom, Figma, and more.',
+  image: "/logitech-mx-keypad.webp",
+  url: 'https://link.amazon/B01UnCG76'
 },
 {
-  id: 'dock',
-  name: 'CalDigit TS4 Dock',
+  id: 'caldigit-dock',
+  name: 'CalDigit Thunderbolt Dock',
   maker: 'CalDigit',
   category: 'home-office',
-  price: 399.99,
+  price: 329.99,
   description:
-  '18 ports over one Thunderbolt cable. Plug in once for two displays, 2.5GbE, and 98W of laptop charging.',
-  image: "/648ba8ed-b07a-420b-8164-94c3775082e9.jpg",
-  buyUrl: 'https://www.caldigit.com'
+  '18 Ports of Extreme Connectivity - Featuring an impressive 18 ports, the TS4 has enough connectivity for even the most demanding of workflows.',
+  image: "/CalDigit-thunderbolt-dock.jpg",
+  url: 'https://link.amazon/B01qqaQ5n'
 },
 {
-  id: 'lightbar',
-  name: 'ScreenBar Halo',
-  maker: 'BenQ',
+  id: 'laptop-stand',
+  name: 'Laptop Stand',
+  maker: 'BoYata',
   category: 'home-office',
-  price: 179,
+  price: 29.99,
   description:
-  'A clip-on monitor light that lights the desk, not your screen. Auto-dims with the room for late-night sessions.',
-  image: "/fa1f10e8-e8c3-4826-b68e-2ca1e4d5a75b.jpg",
-  buyUrl: 'https://www.benq.com'
+  'The laptop stand is made of sturdy alloy steel, you can incline at different angles and stand it up higher or lower depending on your needs.',
+  image: "/laptop-stand.jpg",
+  url: 'https://link.amazon/B0iBwESJm'
 },
 {
   id: 'remarkable',
-  name: 'reMarkable Paper Pro',
+  name: 'reMarkable Device',
   maker: 'reMarkable',
   category: 'gadgets-tech',
   price: 629,
   description:
-  '11.8" color e-ink with a front light and a marker that feels like pencil on paper. Notes and PDFs, zero notifications.',
-  image: "/cbf4f6f7-1e60-4c1b-980e-64ca341922a7.jpg",
-  buyUrl: 'https://remarkable.com'
+  'Whether you work in color or black and white, at the office or on the go, there’s a paper tablet for you.',
+  image: "/reMarkable.webp",
+  url: 'https://link.amazon/B02xO7ZXs'
 },
 {
-  id: 'boox',
-  name: 'BOOX Palma 2',
-  maker: 'Onyx BOOX',
+  id: 'kindle',
+  name: 'Kindle Scribe',
+  maker: 'Amazon',
   category: 'gadgets-tech',
-  price: 279.99,
+  price: 349.99,
   description:
-  'A phone-sized Android e-reader. Kindle, RSS, and read-later apps in your pocket, without the doomscroll.',
-  image: "/2c950bf6-984e-4dfd-95f0-8ac667e99312.jpg",
-  buyUrl: 'https://shop.boox.com'
-},
-{
-  id: 'trmnl',
-  name: 'TRMNL',
-  maker: 'TRMNL',
-  category: 'gadgets-tech',
-  price: 139,
-  description:
-  'A hackable e-ink dashboard for your desk. Calendar, GitHub stats, weather — or write your own plugin.',
-  image: "/fb9e1436-5978-474b-aa24-f4aaeb3b9001.jpg",
-  buyUrl: 'https://usetrmnl.com'
+  '11” display with front light, paper-like feel, and no distractions — Write in notebooks, docs, and books. ',
+  image: "/kindle-scribe.jpg",
+  url: 'https://link.amazon/B0ffae69I'
 },
 {
   id: 'headphones',
-  name: 'Sony WH-1000XM6',
+  name: 'Sony Noise Canceling Headphones (WH-1000XM4)',
   maker: 'Sony',
-  category: 'gadgets-tech',
-  price: 449.99,
+  category: 'home-office',
+  price: 269.99,
   description:
-  'Class-leading noise canceling for open offices, flights, and focus blocks. 30 hours of battery between charges.',
-  image: "/89965b7e-9d7f-4751-b09e-99f363b9883a.jpg",
-  buyUrl: 'https://electronics.sony.com'
+  'Premium noise canceling with Dual Noise Sensor technology',
+  image: "/headphones.jpg",
+  url: 'https://link.amazon/B08YqQEpy'
 },
 {
-  id: 'hub',
+  id: 'home-assistant-green',
   name: 'Home Assistant Green',
   maker: 'Nabu Casa',
   category: 'gadgets-tech',
-  price: 129,
+  price: 219,
   description:
-  'Plug-and-play hub for the open-source smart home. Local control, no cloud lock-in, as much YAML as you like.',
-  image: "/30271dab-5365-4f10-b322-8209131781dd.jpg",
-  buyUrl: 'https://www.home-assistant.io/green'
+  'Home Assistant Green is the easiest way you can start using Home Assistant. Simply plug in the included power adapter and Ethernet cable to begin your Home Assistant journey.',
+  image: "/home-assistant-green.jpg",
+  url: 'https://link.amazon/B0bTsJHQD'
 },
 {
-  id: 'pixelclock',
-  name: 'Ulanzi TC001 Pixel Clock',
+  id: 'pixel-display',
+  name: 'Pixbar Pixel Clock II',
   maker: 'Ulanzi',
   category: 'gadgets-tech',
-  price: 59.99,
+  price: 99.99,
   description:
-  'A 32×8 pixel display you can flash with AWTRIX. Show CI status, notifications, or just a very charming clock.',
-  image: "/c6cca513-69e0-440f-8e91-22a1169447ea.jpg",
-  buyUrl: 'https://www.ulanzi.com'
+  'The TC002 Pixbar smart pixel clock shows the time, weather, scoreboard and your live follower count on a bright 16×52 LED dot matrix. Hook up 2.4GHz WiFi, open the app, and it sets itself',
+  image: "/pixel-display.jpg",
+  url: 'https://link.amazon/B06L7isXj'
 },
 {
   id: 'watch',
-  name: 'Garmin Forerunner 970',
+  name: 'Garmin Watch',
   maker: 'Garmin',
   category: 'fitness-fun',
-  price: 749.99,
   description:
-  'AMOLED running watch with dual-band GPS, training readiness, and up to two weeks of battery on a charge.',
-  image: "/e5aa8025-2183-4331-b4cf-01f86cf2cfcc.jpg",
-  buyUrl: 'https://www.garmin.com'
+  'Smartwatches that track your heart rate, sleep, and workouts.',
+  image: "/Garmin-watch.jpg",
+  url: 'https://link.amazon/B0iBwESJm'
 },
 {
-  id: 'massager',
-  name: 'Theragun Mini',
-  maker: 'Therabody',
-  category: 'fitness-fun',
-  price: 199,
+  id: 'mouse',
+  name: 'M720 Triathlon Mouse',
+  maker: 'Logitech',
+  category: 'home-office',
+  price: 34.99,
   description:
-  'A pocket-sized percussive massager for the shoulders your posture forgot about. Quiet enough for calls.',
-  image: "/718efcf5-bff0-4864-a867-7a0f48c5ac51.jpg",
-  buyUrl: 'https://www.therabody.com'
+  'Multi-Device Wireless Mouse with Hyper-fast scrolling',
+  image: "/M720-Triathlon.png",
+  url: 'https://link.amazon/B0gg0Hrk4'
 },
 {
-  id: 'bonsai',
-  name: 'LEGO Bonsai Tree',
+  id: 'lego',
+  name: 'LEGO Set',
   maker: 'LEGO',
   category: 'fitness-fun',
-  price: 49.99,
   description:
-  '878 pieces of calm. A Sunday-afternoon build that looks right at home next to your monitor.',
-  image: "/569729a0-accb-47e4-8a33-049ec932ccb8.jpg",
-  buyUrl: 'https://www.lego.com'
+  'The same bricks you built as a kid, now elevated to a relaxing hobby for adults.',
+  image: "/LEGO.png",
+  url: 'https://link.amazon/B0hRQiiCC'
 }];
