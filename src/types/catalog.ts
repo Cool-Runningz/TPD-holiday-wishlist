@@ -1,4 +1,4 @@
-export type CategoryId = 'home-office' | 'e-ink' | 'tech' | 'fitness' | 'wellness';
+export type CategoryId = 'gadgets-tech' | 'home-office' | 'fitness-fun';
 
 export type View = 'guide' | 'wishlist';
 
@@ -8,7 +8,6 @@ export interface Category {
   id: CategoryId;
   name: string;
   tagline: string;
-  intro: string;
 }
 
 export interface Product {

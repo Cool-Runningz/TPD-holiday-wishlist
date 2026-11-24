@@ -49,7 +49,7 @@ export const products: Product[] = [
   id: 'remarkable',
   name: 'reMarkable Paper Pro',
   maker: 'reMarkable',
-  category: 'e-ink',
+  category: 'gadgets-tech',
   price: 629,
   description:
   '11.8" color e-ink with a front light and a marker that feels like pencil on paper. Notes and PDFs, zero notifications.',
@@ -60,7 +60,7 @@ export const products: Product[] = [
   id: 'boox',
   name: 'BOOX Palma 2',
   maker: 'Onyx BOOX',
-  category: 'e-ink',
+  category: 'gadgets-tech',
   price: 279.99,
   description:
   'A phone-sized Android e-reader. Kindle, RSS, and read-later apps in your pocket, without the doomscroll.',
@@ -71,7 +71,7 @@ export const products: Product[] = [
   id: 'trmnl',
   name: 'TRMNL',
   maker: 'TRMNL',
-  category: 'e-ink',
+  category: 'gadgets-tech',
   price: 139,
   description:
   'A hackable e-ink dashboard for your desk. Calendar, GitHub stats, weather — or write your own plugin.',
@@ -82,7 +82,7 @@ export const products: Product[] = [
   id: 'headphones',
   name: 'Sony WH-1000XM6',
   maker: 'Sony',
-  category: 'tech',
+  category: 'gadgets-tech',
   price: 449.99,
   description:
   'Class-leading noise canceling for open offices, flights, and focus blocks. 30 hours of battery between charges.',
@@ -93,7 +93,7 @@ export const products: Product[] = [
   id: 'hub',
   name: 'Home Assistant Green',
   maker: 'Nabu Casa',
-  category: 'tech',
+  category: 'gadgets-tech',
   price: 129,
   description:
   'Plug-and-play hub for the open-source smart home. Local control, no cloud lock-in, as much YAML as you like.',
@@ -104,7 +104,7 @@ export const products: Product[] = [
   id: 'pixelclock',
   name: 'Ulanzi TC001 Pixel Clock',
   maker: 'Ulanzi',
-  category: 'tech',
+  category: 'gadgets-tech',
   price: 59.99,
   description:
   'A 32×8 pixel display you can flash with AWTRIX. Show CI status, notifications, or just a very charming clock.',
@@ -115,7 +115,7 @@ export const products: Product[] = [
   id: 'watch',
   name: 'Garmin Forerunner 970',
   maker: 'Garmin',
-  category: 'fitness',
+  category: 'fitness-fun',
   price: 749.99,
   description:
   'AMOLED running watch with dual-band GPS, training readiness, and up to two weeks of battery on a charge.',
@@ -126,7 +126,7 @@ export const products: Product[] = [
   id: 'massager',
   name: 'Theragun Mini',
   maker: 'Therabody',
-  category: 'wellness',
+  category: 'fitness-fun',
   price: 199,
   description:
   'A pocket-sized percussive massager for the shoulders your posture forgot about. Quiet enough for calls.',
@@ -137,7 +137,7 @@ export const products: Product[] = [
   id: 'bonsai',
   name: 'LEGO Bonsai Tree',
   maker: 'LEGO',
-  category: 'wellness',
+  category: 'fitness-fun',
   price: 49.99,
   description:
   '878 pieces of calm. A Sunday-afternoon build that looks right at home next to your monitor.',

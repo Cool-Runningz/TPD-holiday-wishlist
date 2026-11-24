@@ -1,37 +1,25 @@
-import React from 'react';
 import { motion, useReducedMotion } from 'framer-motion';
-import { ArrowDownIcon, StarIcon } from 'lucide-react';
+import { StarIcon } from 'lucide-react';
 import { getProduct } from '../../utils/catalog';
-import { PixelFlake } from '../shared/PixelFlake';
 interface GuideHeroProps {
   savedCount: number;
-  onBrowse: () => void;
   onOpenWishList: () => void;
 }
 const COLLAGE = [{
   id: 'remarkable',
-  tag: 'remarkable/paper-pro',
   box: 'left-[1%] top-[3%] w-[45%] -rotate-[5deg]',
-  tagPos: 'bottom-[16%] left-[18%]'
 }, {
   id: 'headphones',
-  tag: 'sony/wh-1000xm6',
   box: 'right-[3%] top-[1%] w-[41%]',
-  tagPos: 'bottom-[12%] right-[6%]'
 }, {
   id: 'keyboard',
-  tag: 'keychron/q1-max',
   box: 'bottom-[-4%] left-[-3%] w-[68%]',
-  tagPos: 'bottom-[20%] left-[14%]'
 }, {
   id: 'bonsai',
-  tag: 'lego/bonsai',
   box: 'bottom-[1%] right-[1%] w-[35%]',
-  tagPos: 'bottom-[10%] left-[4%]'
 }];
 export function GuideHero({
   savedCount,
-  onBrowse,
   onOpenWishList
 }: GuideHeroProps) {
   const reduce = useReducedMotion();
@@ -73,8 +61,6 @@ export function GuideHero({
               <rect width="100%" height="100%" fill="url(#hero-grid)" />
             </svg>
 
-            <PixelFlake className="absolute left-[47%] top-[43%] h-7 w-7 text-ink sm:h-9 sm:w-9" />
-
             {COLLAGE.map((item, i) => <motion.div key={item.id} className={`absolute ${item.box}`} initial={reduce ? false : {
             opacity: 0,
             y: 10
@@ -87,9 +73,6 @@ export function GuideHero({
             ease: [0.23, 1, 0.32, 1]
           }}>
                 <img src={getProduct(item.id).image} alt="" className="w-full mix-blend-multiply" />
-                <span aria-hidden="true" className={`absolute ${item.tagPos} hidden rounded-md bg-ink px-2 py-1 font-mono text-[11px] text-cream sm:block`}>
-                  {item.tag}
-                </span>
               </motion.div>)}
           </div>
         </div>

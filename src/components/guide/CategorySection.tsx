@@ -1,4 +1,3 @@
-import React from 'react';
 import type { Category, GuideLayout } from '../../types/catalog';
 import { productsInCategory } from '../../utils/catalog';
 import { ProductListRow } from './ProductListRow';
@@ -48,7 +47,6 @@ export function CategorySection({ category, layout, selectedIds, onToggle }: Cat
         <p className={`mt-4 font-display font-medium leading-snug text-ink ${isList ? 'text-lg' : 'text-xl'}`}>
           {category.tagline}
         </p>
-        {!isList && <p className="mt-3 max-w-sm text-[15px] leading-relaxed text-ink-soft">{category.intro}</p>}
       </header>
 
       <div className="lg:col-span-8">
