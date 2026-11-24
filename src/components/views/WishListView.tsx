@@ -1,4 +1,3 @@
-import React from 'react';
 import { AnimatePresence, motion, useReducedMotion } from 'framer-motion';
 import { ArrowUpRightIcon, CopyIcon, Share2Icon, StarIcon } from 'lucide-react';
 import { useShareWishList } from '../../hooks/useShareWishList';
@@ -149,7 +148,7 @@ export function WishListView({ items, onToggle, onBrowse, onOpenInGuide }: WishL
                   rel="noreferrer"
                   className="inline-flex h-10 items-center gap-1 rounded-full bg-ink px-4 text-sm font-semibold text-cream transition-[background-color,transform] duration-150 ease-out hover:bg-ink/90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
                   
-                      Buy
+                      View
                       <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
                       <span className="sr-only">{product.name} (opens retailer site)</span>
                     </a>

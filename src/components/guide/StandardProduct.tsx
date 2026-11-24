@@ -1,5 +1,4 @@
-import React from 'react';
-import { StarIcon } from 'lucide-react';
+import { ArrowUpRightIcon } from 'lucide-react';
 import type { Product } from '../../types/catalog';
 import { Price } from '../shared/Price';
 import { SaveButton } from '../shared/SaveButton';
@@ -38,12 +37,17 @@ export function StandardProduct({ product, selected, onToggle, wide = false }: S
         <p className="mt-2 text-sm leading-relaxed text-ink-soft">{product.description}</p>
         <div className="mt-auto flex items-center justify-between gap-3 pt-5">
           <Price amount={product.price} size="md" />
-          {selected &&
-          <span className="inline-flex items-center gap-1.5 font-mono text-[11px] text-ink">
-              <StarIcon className="h-3.5 w-3.5" fill="currentColor" aria-hidden="true" />
-              Saved
-            </span>
-          }
+          <div className="flex items-center gap-2">
+            <a
+              href={product.buyUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex h-10 items-center gap-1 rounded-full bg-ink px-4 text-sm font-semibold text-cream transition-[background-color,transform] duration-150 ease-out hover:bg-ink/90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
+              View
+              <ArrowUpRightIcon className="h-4 w-4" aria-hidden="true" />
+              <span className="sr-only">{product.name} (opens retailer site)</span>
+            </a>
+          </div>
         </div>
       </div>
     </article>);
