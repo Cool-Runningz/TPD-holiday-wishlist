@@ -1,4 +1,3 @@
-import React from 'react';
 import { useReducedMotion } from 'framer-motion';
 import { ArrowRightIcon } from 'lucide-react';
 import { categories } from '../../data/categories';
@@ -42,7 +41,6 @@ export function GuideView({ selectedIds, onToggle, onOpenWishList, layout, onLay
     <main>
       <GuideHero
         savedCount={selectedIds.length}
-        onBrowse={() => scrollTo(CATEGORY_IDS[0])}
         onOpenWishList={onOpenWishList} />
       
 
@@ -59,21 +57,26 @@ export function GuideView({ selectedIds, onToggle, onOpenWishList, layout, onLay
 
         )}
 
-        <footer className="flex flex-col items-start gap-6 border-t border-ink/10 pt-12 sm:flex-row sm:items-center sm:justify-between">
-          <div className="flex items-center gap-4">
-            <PixelFlake className="h-8 w-8 shrink-0 text-sky-deep" />
-            <p className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink sm:text-3xl">
-              Happy holidays!
-            </p>
+        <footer className="border-t border-ink/10 pt-12">
+          <div className="flex flex-col items-start gap-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="flex items-center gap-4">
+              <PixelFlake className="h-8 w-8 shrink-0 text-sky-deep" />
+              <p className="font-display text-2xl font-semibold tracking-[-0.02em] text-ink sm:text-3xl">
+                Happy holidays!
+              </p>
+            </div>
+            <button
+              type="button"
+              onClick={onOpenWishList}
+              className="inline-flex h-12 shrink-0 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-semibold text-cream transition-[background-color,transform] duration-150 ease-out hover:bg-ink/90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
+              See My Wish List
+              <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
+            </button>
           </div>
-          <button
-            type="button"
-            onClick={onOpenWishList}
-            className="inline-flex h-12 shrink-0 items-center gap-2 rounded-full bg-ink px-6 text-[15px] font-semibold text-cream transition-[background-color,transform] duration-150 ease-out hover:bg-ink/90 active:scale-[0.97] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-sky-deep focus-visible:ring-offset-2 focus-visible:ring-offset-cream">
-            
-            See My Wish List
-            <ArrowRightIcon className="h-4 w-4" aria-hidden="true" />
-          </button>
+          <p className="mt-8 text-sm text-ink">
+            <span className="font-semibold underline decoration-ink/30 underline-offset-4">Affiliate disclosure:</span>{' '}
+            A subset of the links on this page are affiliate links.
+          </p>
         </footer>
       </div>
     </main>);
